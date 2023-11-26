@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #022E57;
+
+
+}
+
+.pesquisa{
+    margin-right: 250px !important;
+    width: 700px;
+}
+
+.profile{
+    padding-left: 0px ;
+
+}
+
