@@ -1,3 +1,5 @@
+
+
 const bar = document.getElementById('bar');
 
   new Chart(bar, {
