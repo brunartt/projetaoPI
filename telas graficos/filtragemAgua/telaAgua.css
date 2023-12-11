@@ -1,0 +1,73 @@
+@import url('https://fonts.cdnfonts.com/css/carme');
+
+.navbar{
+    background-color: #022E57;
+
+
+}
+
+
+.profile{
+    padding-left: 0px ;
+
+}
+
+.filtragemEscola{
+    color: #022E57;
+    font-family: Carme;
+    font-size: 40px; 
+    font-weight: 400; 
+}
+
+.textoMenor{
+    color: #000;
+    font-family: Carme;
+    font-size: 20px; 
+}
+
+.textoDescricao{
+    color: #022E57 !important;
+    font-family: Carme;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400; 
+}
+
+.pesquisa{
+    margin-right: 250px !important;
+    width: 700px;
+    max-width: 600px;} 
+    
+    
+.dropdown li{
+    display: inline-block;
+}
+
+.dropdown li a{
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.dropdown li a:hover{
+    background-color: #546F88;
+}
+
+.dropMenu a{
+    display: block;  
+    color: #FFF; 
+    display: inline-block;
+}
+
+.dropMenu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+    background-color: #546F88;
+}
+
+.drop:hover .dropMenu{
+    display: block;
+}
+
