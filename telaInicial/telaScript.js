@@ -1,53 +1,34 @@
-var csvFilePath = '../data/Escola.csv';
 
-function processarCSV(csvData) {
-  Papa.parse(csvData, {
-    header: true,
-    dynamicTyping: true,
-    complete: function (results) {
-      console.log(results.data); 
-
-      atualizarGraficoBar(results.data);
-
-      atualizarGraficoDoughnut(results.data);
-
-      atualizarGraficoBar2(results.data);
-
-      atualizarGraficoBar3(results.data);
-      
-      console.log(data)
-    }
-  });
-}
-
-function atualizarGraficoBar(data) {
   const bar = document.getElementById('bar');
-
-  const variaveis = ['QT_FUNCIONARIOS', 'QT_PROF_MONITORES'];
 
   new Chart(bar, {
     type: 'bar',
     data: {
-      labels: data.map(item => item.NO_MUNICIPIO),
-      datasets: variaveis.map((variavel, index) => ({
-        label: variavel,
-        data: data.map(item => item[variavel]),
+      labels: ['Recife', 'Pernambuco', 'Brasil'],
+      datasets: [{
+        label: 'Dados demostrados por %',
+        data: [38, 20, 30],
         borderWidth: 1,
-        backgroundColor: `cor_para_variavel_${index}`,
-      })),
+        backgroundColor: [
+          '#032E58',
+          '#2C8BB9 ',
+          '#113F57'
+        ]
+      }]
     },
+    
     options: {
       scales: {
         y: {
           beginAtZero: true,
           suggestedMin: 0,
-          suggestedMax: 100,
-          stepSize: 10,
+          suggestedMax: 40,
+          stepSize: 40,
         },
       },
     },
   });
-}
+
 
 
 
