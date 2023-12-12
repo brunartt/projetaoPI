@@ -1,3 +1,3 @@
 function redirecionarParaInformativo() {
-    window.location.href = "../telaInformativo/telaInformativo.html";
+    window.location.href = "../telas/telaInformativo.html";
 }
